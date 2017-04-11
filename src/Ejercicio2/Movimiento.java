@@ -17,9 +17,11 @@ public class Movimiento {
     private double monto;
     private Tipo tipo;
 
-    public Movimiento(Date fecha, double monto) {
-        this.fecha = fecha;
+    public Movimiento(Tipo tipo,double monto) {
+        this.tipo= tipo;
         this.monto = monto;
+        this.fecha = new java.util.Date();
+        
         
     }
 

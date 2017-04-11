@@ -24,6 +24,8 @@ public class Cuenta {
         this.saldoCuenta = saldoCuenta;
         this.nombreCliente = nombreCliente;
         this.fechaCreacion = new java.util.Date();
+        this.movimientos = new ArrayList<Movimiento>();
+        
     }
 
     public int getNumCuenta() {
@@ -38,8 +40,8 @@ public class Cuenta {
         return saldoCuenta;
     }
 
-    public void addSaldoCuenta(double Cantidad) {
-        this.saldoCuenta = (this.saldoCuenta + Cantidad);
+    public void setSaldoCuenta(double Cantidad) {
+        this.saldoCuenta =  Cantidad;
     }
 
     public Date getFechaCreacion() {
