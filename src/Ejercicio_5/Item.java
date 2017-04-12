@@ -15,21 +15,22 @@ public class Item extends Objeto_Dominio {
     
     private String nombre;
     private double costoUnidad;
-    private ArrayList<Producto> productos = new ArrayList<Producto>();
+    private Producto producto;
 
     public Item(String nombre, String id) {
         super(id);
         this.nombre = nombre;
     }
-    
-    public ArrayList<Producto> getProductos() {
-        return productos;
+
+    public Producto getProducto() {
+        return producto;
     }
 
     public void addProducto(Producto producto) {
-        this.productos.add(producto);
+        this.producto = producto;
     }
-
+    
+    
     public String getNombre() {
         return nombre;
     }
