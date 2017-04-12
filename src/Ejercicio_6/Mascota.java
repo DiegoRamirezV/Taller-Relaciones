@@ -14,6 +14,7 @@ public class Mascota {
     private String nombre;
     private String color;
     private String tipo;
+    private Persona dueño;
 
     public Mascota(String id, String nombre) {
         this.id = id;
@@ -55,4 +56,14 @@ public class Mascota {
     public void sonido(){
         System.out.println("****");
     }
+
+    public Persona getDueño() {
+        return dueño;
+    }
+
+    public void setDueño(Persona dueño) {
+        this.dueño = dueño;
+    }
+    
+    
 }

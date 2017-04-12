@@ -15,10 +15,10 @@ public class Gato extends Mascota{
     
 
     
-    public Gato(boolean esCazador, String id, String nombre) {
+    public Gato(String id, String nombre) {
         super(id, nombre);
-        this.esCazador = esCazador;
-        this.tipo=
+        
+        
     }
 
     public boolean isEsCazador() {

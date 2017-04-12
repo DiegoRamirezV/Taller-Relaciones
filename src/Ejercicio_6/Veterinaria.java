@@ -31,6 +31,7 @@ public class Veterinaria {
     }
     
     public void mostrarMascotaPorTipo(String tipo){
+        System.out.println("mascotas tipo " + tipo + "\n ************* \n");
             for (int i = 0; i < mascotas.size(); i++) {
                 if (mascotas.get(i).getTipo()==tipo){
                 Mascota m = mascotas.get(i);
@@ -38,8 +39,6 @@ public class Veterinaria {
                 System.out.println("Id " + m.getId() + "\n" +
                                     "Nombre " + m.getNombre() + "\n" +
                                     "Color " + m.getColor()+"\n");
-                }else{
-                    System.out.println("No hay mascotas de ese tipo");
                 }
         }
     }
