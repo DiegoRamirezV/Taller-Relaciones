@@ -32,8 +32,8 @@ public class Semana {
         return diasHabiles;
     }
 
-    public void setDiasHabiles(Dia[] diasHabiles) {
-        this.diasHabiles = diasHabiles;
+    public void addDiaHabil(int i,Dia diaHabil) {
+        this.diasHabiles[i]=diaHabil;
     }
 
     public ArrayList<Sala> getSalas() {
@@ -42,6 +42,10 @@ public class Semana {
 
     public void addSala(Sala sala) {
         this.salas.add(sala);
+    }
+    
+    public ArrayList<Segmento> getDiasLibres(int dia) {
+        return this.diasHabiles[dia].getSegmentos();
     }
     
     
