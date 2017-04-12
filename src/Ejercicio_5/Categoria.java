@@ -48,5 +48,24 @@ public class Categoria extends Objeto_Dominio{
         this.descripcion = descripcion;
     }
     
+    public void informacionTotalProductos(){
+        System.out.println("Categoria " + this.nombre + "\n");
+        for (int i = 0; i < this.productos.size(); i++) {
+            Producto p = this.productos.get(i);
+            
+            System.out.println("Nombre producto: " + p.getNombre() + "\n" +
+                               "Descripción: " + p.getDescripcion() + "\n" +
+                               "Items del producto: \n"  );
+            for (int j = 0; j < p.getItems().size(); j++) {
+                Item item = p.getItems().get(j);
+                
+                System.out.println("Nombre del item: " + item.getNombre() + "\n" +
+                                   "Costo unidad: " + item.getCostoUnidad() + "\n");
+                System.out.println("");
+                
+            }
+        }
+    
+    }
     
 }

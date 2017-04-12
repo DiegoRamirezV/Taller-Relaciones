@@ -17,17 +17,17 @@ public class Item extends Objeto_Dominio {
     private double costoUnidad;
     private ArrayList<Producto> productos = new ArrayList<Producto>();
 
+    public Item(String nombre, String id) {
+        super(id);
+        this.nombre = nombre;
+    }
+    
     public ArrayList<Producto> getProductos() {
         return productos;
     }
 
     public void addProducto(Producto producto) {
         this.productos.add(producto);
-    }
-
-    public Item(String nombre, String id) {
-        super(id);
-        this.nombre = nombre;
     }
 
     public String getNombre() {
